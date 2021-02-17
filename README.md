@@ -1,4 +1,5 @@
 # Are Colleges Worth It?
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftechcrunch.com%2F2020%2F04%2F14%2Fcollege-isnt-free-yet-but-savi-raises-a-6m-series-a-to-assist-student-loan-borrowers-find-loan-forgiveness%2F&psig=AOvVaw1IIo-93FhjngUPtpe0ZyTd&ust=1613636665880000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiztJ2_8O4CFQAAAAAdAAAAABAP)
 
 ## Business Understanding  
 According to a survey conducted by LendEDU, about 7,000 college students expected a median salary of $60,000 after graduating. 52% of college students take out student loans to attend college, and of that number, 17% have trouble paying for it. This makes us question, is college worth attending? 
@@ -50,7 +51,7 @@ After multiple iterations. We have an AUC score of .929, an accuracy score of 95
 
 ## Conclusion and Recommendations
 
-![alt text](https://github.com/christianmoya/Expected_Income_After_College/blob/main/feature_impact.png)
+![alt text](https://github.com/christianmoya/Expected_Income_After_College/blob/main/feature_impact.png)</n>
 Based on our model, we found the features with the most impact on expected early career salary were non-resident enrollment, school rank (top 50 and top 100), engineering school, liberal arts, and for sports fans. Research universities had a negative impact on our value. With that, we would recommend that students, no matter what school they go to, do the following: 
 1. Gain a global perspective: learn from people that have different experiences than you. 
 2. Join a sport, and gain some school spirit. That can really build your network. 
