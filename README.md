@@ -8,7 +8,7 @@ I looked at over 900 schools and 10 features for each, testing to see what featu
 Our <b>null hypothesis</b> claims that features do not have any impact on expected income. 
 Our <b>alternate hypothesis</b> claims that features do have an impact on expected income. 
 
-## Data Understanding 
+## Data Understanding (College_EDA Notebook) 
 Data was taken from PayScale.com, data.world, and US News & Report, offering the following features: 
 
 1. Meaning Percentage (continuous) - how many graduates find their work meaningful?
@@ -29,6 +29,20 @@ I took a look at 1,500 colleges around the U.S. and its expected salary to deter
 
 <b>US News & Reports</b> offered school rankings. Because not all schools fell on the list, we had to bin the schools into groups of 50, and signify if a school was not in the top 250 list. 
 
-
-
 For our target, we find that only about 10% of schools actually have an expected income of $60,000 or more. <i>Additional distributions for our features can be found in the Colleges_EDA notebook.</i>
+
+## Data Preparation (College_Data_Preparation_and_Model) 
+Because data came from multiple sources, a number of colleges varied in the spelling of their name (eg. Columbia University vs. Columbia College in the City of New York). This meant that DataFrames did not merge as smoothly as I'd hope, hence missing values in some columns. In the notebook, we actually deal with null values two different ways to test which might have a better recall score. 
+
+## Model (College_Data_Preparation_and_Model) 
+Because my predictive target is binary, I chose to go with a LogisticRegression model using Scikit Learn. After toying with test size and class weights, I moved over to a LogisticRegression model using statsmodels. Doing so allowed me to find the coefficients for each feature and narrow down the features based on p-value. 
+
+## Evaluate (College_Data_Preparation_and_Model) 
+Baseline model had an AUC score of .796, an accuracy score of 91%, and a recall score of 22%. This is problematic, because recall is more important, given we would want to classify false if they are false. It would just be sad if a student went to a school, thinking they're supposed to make $60,000, but they don't. It would be a surprise and delight if someone went to  a school, thinking it didn't classify with an expected income of $60,000, but it actually is. 
+
+After multiple iterations. We have an AUC score of .929, an accuracy score of 95.3% and a recall score of 72.0%. 
+
+## Conclusion 
+Based on our model, we found the features with the most impact on expected early career salary were non-resident enrollment, school rank (top 50 and top 100), engineering school, liberal arts, and for sports fans. Research universities had a negative impact on our value. With that, we would recommend that students, no matter what school they go to, do the following: 
+1. Gain a global perspective: learn from people that have different experiences than you. 
+2. Join a sport, and gain some school spirit. That can really build your network. 
