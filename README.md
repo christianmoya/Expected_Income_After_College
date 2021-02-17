@@ -45,7 +45,7 @@ Because data came from multiple sources, a number of colleges varied in the spel
 Because my predictive target is binary, I chose to go with a LogisticRegression model using Scikit Learn. After toying with test size and class weights, I moved over to a LogisticRegression model using statsmodels. Doing so allowed me to find the coefficients for each feature and narrow down the features based on p-value. 
 
 ## Evaluate (College_Data_Preparation_and_Model) 
-Baseline model had an AUC score of .796, an accuracy score of 91%, and a recall score of 22%. This is problematic, because recall is more important, given we would want to classify false if they are false. It would just be sad if a student went to a school, thinking they're supposed to make $60,000, but they don't. It would be a surprise and delight if someone went to  a school, thinking it didn't classify with an expected income of $60,000, but it actually is. 
+Baseline model had an AUC score of .796, an accuracy score of 91%, and a precision score of 50%. This is problematic, because we don't want to give false positives. allowing a student to think the school they attend would offer $60,000 upon graduation when it shoudln't. It would just be sad if a student went to a school, thinking they're supposed to make $60,000, but they don't. It would be a surprise and delight if someone went to  a school, thinking it didn't classify with an expected income of $60,000, but it actually is. 
 
 After multiple iterations. We have an AUC score of .929, an accuracy score of 95.3% and a recall score of 72.0%. 
 
@@ -54,5 +54,7 @@ After multiple iterations. We have an AUC score of .929, an accuracy score of 95
 ![alt text](https://github.com/christianmoya/Expected_Income_After_College/blob/main/feature_impact.png)</n>
 
 Based on our model, we found the features with the most impact on expected early career salary were non-resident enrollment, school rank (top 50 and top 100), engineering school, liberal arts, and for sports fans. Research universities had a negative impact on our value. With that, we would recommend that students, no matter what school they go to, do the following: 
-1. Gain a global perspective: learn from people that have different experiences than you. 
-2. Join a sport, and gain some school spirit. That can really build your network. 
+1. Advocate for income equality. It's clear there's still a large discrepency in pay amongst gender and race. We should make sure we're getting paid equal pay for equal work. 
+2. Gain a global perspective: learn from people that have different experiences than you. 
+3. Join a sport, and gain some school spirit. That can really build your network. 
+4. Think through occupation wisely. Data suggests that engineering has a positive impact on salary, while research has a negative impact. It's clear occupation impacts salary, so think through lifestyle and what might best support that lifestyle. 
