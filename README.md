@@ -31,6 +31,8 @@ I took a look at 1,500 colleges around the U.S. and its expected salary to deter
 
 For our target, we find that only about 10% of schools actually have an expected income of $60,000 or more. <i>Additional distributions for our features can be found in the Colleges_EDA notebook.</i>
 
+![alt text](https://github.com/christianmoya/Expected_Income_After_College/blob/main/Target_hist.png)
+
 ## Data Preparation (College_Data_Preparation_and_Model) 
 Because data came from multiple sources, a number of colleges varied in the spelling of their name (eg. Columbia University vs. Columbia College in the City of New York). This meant that DataFrames did not merge as smoothly as I'd hope, hence missing values in some columns. In the notebook, we actually deal with null values two different ways to test which might have a better recall score. 
 
