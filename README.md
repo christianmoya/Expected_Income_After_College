@@ -42,7 +42,7 @@ Baseline model had an AUC score of .796, an accuracy score of 91%, and a recall 
 
 After multiple iterations. We have an AUC score of .929, an accuracy score of 95.3% and a recall score of 72.0%. 
 
-## Conclusion 
+## Recommendations and Conclusion 
 Based on our model, we found the features with the most impact on expected early career salary were non-resident enrollment, school rank (top 50 and top 100), engineering school, liberal arts, and for sports fans. Research universities had a negative impact on our value. With that, we would recommend that students, no matter what school they go to, do the following: 
 1. Gain a global perspective: learn from people that have different experiences than you. 
 2. Join a sport, and gain some school spirit. That can really build your network. 
